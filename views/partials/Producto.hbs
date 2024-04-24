@@ -1,0 +1,25 @@
+{{!-- 3. Crear un parcial “producto” que contenga el template correspondiente a la presentación de cada producto en el Dashboard y 
+reciba como parámetro el nombre del producto. (2 Puntos) --}}
+<div class="col">
+  <div class="card shadow-sm align-items-center">
+    <img
+      src="/public/{{ this.articulo }}.png"
+      alt="{{ this.articulo }}"
+      class="bd-placeholder-img card-img-top"
+    />
+    <div class="card-body">
+      <p class="card-text card_producto_descripcion">
+        {{primeraMayuscula this.articulo}}
+      </p>
+      <p class="card_producto_precio">
+        <span>$ {{formatearNumber this.precio }}</span> ({{ this.medida }}
+        {{ this.unidad }})
+      </p>
+      <div class="d-flex justify-content-center align-items-center">
+        <button type="button" class="btn btn-primary boton_agregar_carrito">
+          Agregar al Carrito
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

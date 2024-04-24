@@ -1,0 +1,14 @@
+{{!-- 4. Crear un parcial para la sección principal en donde se renderice un helper con el mensaje de bienvenida y 
+se realice una iteración para renderizar un parcial “producto” pasándole como argumento el nombre de cada producto. (2 Puntos) --}}
+<main>
+  {{>Hero}}
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {{#each datos}}
+        {{>Producto this }}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>

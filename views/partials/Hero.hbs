@@ -1,0 +1,19 @@
+{{!-- 4. Crear un parcial para la sección principal en donde se renderice un helper con el mensaje de bienvenida y 
+se realice una iteración para renderizar un parcial “producto” pasándole como argumento el nombre de cada producto. (2 Puntos) --}}
+<div class="bienvenidaPag" style="background-color: rgb(248, 249, 250)">
+  <section class="py-5 text-center container mx-auto">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        {{#boldHeroTitle}}Bievenidos a Mercado Web{{/boldHeroTitle}}
+        <p class="lead"> <strong>Seleccione sus Productos</strong> </p>
+        <p>
+          <button id="btn_show_carrito" class="btn btn-success my-2">
+            Ver Carrito <i class="fa-solid fa-cart-shopping"></i>
+            <span class="hero_ver_carrito_cuenta"> 0 </span>
+          </button>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
